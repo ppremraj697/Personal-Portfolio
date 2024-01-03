@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premraj's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Vidaloka&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/16fb32f0a8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -19,6 +23,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="https://github.com/ppremraj697" target="_blank">GitHub</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
@@ -32,24 +37,22 @@
         </div>
     </div>
 
+
     <!-- ---------------------------------------ABOUT---------------------------------------- -->
 
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png" alt="">
+                    <img src="images/photo.jpg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima accusamus velit nobis nam.
-                        Numquam velit veniam consequatur magni dolor iusto quas tempora aliquam et laboriosam quidem
-                        tempore fugit commodi dicta, suscipit dolores maiores? Ullam consequuntur ab excepturi magnam
-                        autem officiis dolorum dicta voluptatibus culpa sequi, blanditiis, corrupti nesciunt libero non
-                        quibusdam aliquid, labore reprehenderit nobis nostrum laudantium aut a itaque ea! Mollitia
-                        assumenda quam hic deserunt, iure, incidunt, sapiente vitae provident amet aut facere nemo qui
-                        dolores. Aspernatur deleniti distinctio nemo repellendus nam, similique architecto suscipit
-                        omnis fuga atque eius sequi ipsa deserunt laudantium, labore dolorum non in iste obcaecati.</p>
+                    <p>Hello, I'm Premraj Patil, a Self-motivated and Hardworking undergraduate seeking an opportunity
+                        to work in a challenging environment. Also, a passionate Software Engineer with a strong
+                        foundation in coding and problem-solving skills , eager to contribute innovative solutions to
+                        real-world challenges in the tech industry ultimately utilizing my knowledge for the self-growth
+                        as well as the growth of the organization.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -57,24 +60,47 @@
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <ul class="skills">
+                            <!-- <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                             <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li> -->
+                            <div class="first-skills">
+                                <li>Object-Oriented Programming</li>
+                                <li>Data Structures and Algorithms</li>
+                                <li>Database Management System</li>
+                                <li>Operating System</li>
+                            </div>
+                            <div class="second-skills">
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>JavaScript</li>
+                                <li>Git & GitHub</li>
+                            </div>
+                            <div class="third-skills">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Bootstrap</li>
+                                <li>MySQL</li>
+                                <li>Linux</li>
+                            </div>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>ABC</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>Computer Society of India | June 2022 - Present</span><br>Co-Technical Coordinator
+                            </li>
+                            <li><span>VIEH | March 2023 - April 2023</span><br>Front-end Development Intern</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>DEF</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>BE in Computer Engineering | 2020 - 2024</span><br>Savitribai Phule Pune
+                                University <br>CGPA: 8.64</li>
+                            <li><span>XII (CBSE BOARD) | 2017 - 2019</span><br>Lady Anusuya Singhania Educational
+                                Academy, Jhalawar <br>Percentage: 80.83%</li>
+                            <li><span>X (CBSE BOARD) | 2012 - 2017</span><br>Jawahar Navodaya Vidyalaya, Nandurbar
+                                <br>CGPA: 9.0
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -90,21 +116,23 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, cum.</p>
-                    <a href="#">Learn more</a>
+                    <h2>Web Designer</h2>
+                    <p>I craft unique web experiences, starting from scratch, and transforming ideas into vibrant,
+                        interactive realities.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, cum.</p>
-                    <a href="#">Learn more</a>
+                    <h2>UI/UX Designer</h2>
+                    <p>I prioritize simple content structure, visually appealing design patterns and specialize in
+                        creating thoughtful interactions for enhanced user experiences.</p>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
                     <h2>App Design</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, cum.</p>
-                    <a href="#">Learn more</a>
+                    <!-- <a href="#">Learn more</a> -->
                 </div>
             </div>
         </div>
@@ -119,24 +147,29 @@
                 <div class="work">
                     <img src="images/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, repellendus.</p>
+                        <h3>Spenndle - An Expense Manager App</h3>
+                        <p>A simple to use Java based expense manager; user can add new expenses, view, update and
+                            delete existing expenses.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-2.png" alt="">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, repellendus.</p>
+                        <h3>Personal Portfolio</h3>
+                        <p>Crafted a personal portfolio website using HTML, CSS, and JavaScript. Designed for optimal
+                            user experience with interactive elements, making information easily accessible and
+                            engaging.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-3.png" alt="">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, repellendus.</p>
+                        <h3>Bank Management System</h3>
+                        <p>Developed this project in C++ to gain practical experience in OOP principles, file handling,
+                            and data structures. Showcases ability to design, implement, and maintain a complex system.
+                        </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -154,7 +187,7 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-envelope"></i> ppremraj697@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> 9119216013</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9119216013</p>
                     <div class="social-icons">
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-x-twitter"></i></a>

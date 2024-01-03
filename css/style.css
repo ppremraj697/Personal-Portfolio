@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    /* font-family: Poppins, sans-serif; */
     font-family: 'Poppins', sans-serif;
+    font-family: 'Vidaloka', serif;
     box-sizing: border-box;
 }
 
@@ -20,6 +22,7 @@ body {
     background-image: url(../images/background.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -94,7 +97,7 @@ nav ul li a:hover::after {
 
 .about-col-1 {
     flex-basis: 35%;
-    /* width of the column */
+    height: 100vh;
 }
 
 .about-col-1 img {
@@ -158,6 +161,17 @@ nav ul li a:hover::after {
     display: block;
 }
 
+/* Changed CSS */
+
+.tab-contents .skills{
+    display: flex;
+}
+
+.first-skills, .second-skills, .third-skills{
+    /* width: 15%; */
+    padding-right: 50px;
+}
+
 
 /* -----------------------------------------SERVICES---------------------------- */
 
@@ -193,13 +207,13 @@ nav ul li a:hover::after {
     margin-bottom: 15px;
 }
 
-.services-list div a {
+/* .services-list div a {
     text-decoration: none;
     color: white;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
-}
+} */
 
 .services-list div:hover {
     background-color: #ff004f;
@@ -425,6 +439,14 @@ nav .fa-solid {
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
+    }
+
+    .tab-contents .skills{
+        display: block;
+    }
+
+    .first-skills, .second-skills, .third-skills{
+        padding: 0;
     }
 
     .about-col-1 {
