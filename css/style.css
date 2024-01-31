@@ -1,9 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: Poppins, sans-serif; */
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Vidaloka', serif; */
     box-sizing: border-box;
 }
 
@@ -16,17 +14,34 @@ body {
     color: #fff;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/background.png);
+    background-image: url(../images/Untitled.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container {
     padding: 10px 10%;
+}
+
+#header .container {
+    margin-top: 23vh;
+    height: 100%;
+}
+
+#navBar {
+    width: 80vw;
+    margin: 2vh auto;
 }
 
 nav {
@@ -37,7 +52,11 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    font-size: 3vw;
+}
+
+.p {
+    color: #ff004f;
 }
 
 nav ul li {
@@ -69,7 +88,6 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;
     font-size: 30px;
 }
 
@@ -194,6 +212,7 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    place-items: center;
 }
 
 .services-list div {
@@ -313,6 +332,9 @@ nav ul li a:hover::after {
 
 .contact-left {
     flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .contact-right {
@@ -359,6 +381,7 @@ nav ul li a:hover::after {
 
 .contact-right form {
     width: 100%;
+    height: 100%;
 }
 
 form input,
@@ -400,9 +423,14 @@ nav .fa-solid {
         background-image: url(../images/phone-background.png);
     }
 
+    #navBar h1{
+        font-size: 5vh;
+    }
+
     .header-text {
-        margin-top: 100%;
+        margin-top: 80%;
         font-size: 16px;
+        text-align: center;
     }
 
     .header-text h1 {
