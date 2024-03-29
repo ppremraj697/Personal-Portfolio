@@ -261,9 +261,11 @@ nav ul li a:hover::after {
 
 .work img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    object-fit: cover;
 }
 
 .layer {
@@ -423,7 +425,7 @@ nav .fa-solid {
         background-image: url(../images/phone-background.png);
     }
 
-    #navBar h1{
+    #navBar h1 {
         font-size: 5vh;
     }
 
