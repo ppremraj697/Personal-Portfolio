@@ -1,237 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Premraj's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Vidaloka&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/16fb32f0a8.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/16fb32f0a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div id="navBar">
-            <nav>
-                <h1 class="logo"><span class="p">P</span>remraj.</h1>
-                <ul id="sideMenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="https://github.com/ppremraj697" target="_blank">GitHub</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
-        </div>
+      <div id="navBar">
+        <nav>
+          <h1 class="logo"><span class="p">P</span>remraj.</h1>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li>
+              <a href="https://github.com/ppremraj697" target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+      </div>
 
-        <div class="container">
-            <div class="header-text">
-                <p>Software Engineer</p>
-                <h1>Hi, I'm <span>Premraj</span><br>Patil from INDIA</h1>
-            </div>
+      <div class="container">
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span>Premraj</span><br />Patil from INDIA</h1>
         </div>
+      </div>
     </div>
-
 
     <!-- ---------------------------------------ABOUT---------------------------------------- -->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/photo.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hello, I'm Premraj Patil, a Self-motivated and Hardworking undergraduate seeking an opportunity
-                        to work in a challenging environment. Also, a passionate Software Engineer with a strong
-                        foundation in coding and problem-solving skills, eager to contribute innovative solutions to
-                        real-world challenges in the tech industry ultimately utilizing my knowledge for the self-growth
-                        and the growth of the organization.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul class="skills">
-                            <div class="first-skills">
-                                <li>Object-Oriented Programming</li>
-                                <li>Data Structures and Algorithms</li>
-                                <li>Database Management System</li>
-                                <li>Operating System</li>
-                            </div>
-                            <div class="second-skills">
-                                <li>ReactJS</li>
-                                <li>Redux</li>
-                                <li>NextJS(Learning)</li>
-                                <li>JavaScript</li>
-                                <li>Java</li>
-                                <li>C++</li>
-                                <li>Git & GitHub</li>
-                            </div>
-                            <div class="third-skills">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>Bootstrap</li>
-                                <li>MySQL</li>
-                                <li>Linux</li>
-                            </div>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Computer Society of India | June 2022 - Present</span><br>Co-Technical Coordinator
-                            </li>
-                            <li><span>VIEH | March 2023 - April 2023</span><br>Front-end Development Intern</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>BE in Computer Engineering | 2020 - 2024</span><br>Savitribai Phule Pune
-                                University <br>CGPA: 8.64</li>
-                            <li><span>XII (CBSE BOARD) | 2017 - 2019</span><br>Lady Anusuya Singhania Educational
-                                Academy, Jhalawar <br>Percentage: 80.83%</li>
-                            <li><span>X (CBSE BOARD) | 2012 - 2017</span><br>Jawahar Navodaya Vidyalaya, Nandurbar
-                                <br>CGPA: 9.0
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/photo.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <div class="">
+              <p>
+                Hello, I'm <span class="highlight">Premraj Patil</span>, a
+                dedicated and self-driven Software Engineer with a strong work
+                ethic. I previously worked at
+                <span class="highlight">Raykor Technologies</span>, where I
+                gained solid experience working with
+                <strong>JavaScript</strong> and developing
+                <strong>RESTful web services</strong>. As part of my personal
+                learning, I have been actively expanding my skill set in
+                building intuitive, responsive web interfaces with
+                <strong>React.js</strong> and <strong>Tailwind CSS</strong>.
+              </p>
+              <p>
+                With a solid foundation in coding and problem-solving, I'm
+                passionate about leveraging my skills to contribute innovative
+                solutions to real-world problems in the tech industry. My goal
+                is to use my expertise to drive both
+                <span class="accent-text">personal development</span> and the
+                success of the organizations I work with.
+              </p>
+              <p>
+                I'm actively seeking new challenges that will help me grow both
+                <span class="accent-text">professionally</span> and
+                <span class="accent-text">personally</span>.
+              </p>
             </div>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li>
+                  <span
+                    >Raykor Technologies Pvt. Ltd. | August 2024 - November
+                    2024</span
+                  ><br />Software Engineer Trainee
+                </li>
+                <li>
+                  <span>VIEH | March 2023 - April 2023</span><br />Front-end
+                  Development Intern
+                </li>
+                <li>
+                  <span>Computer Society of India | June 2022 - May 2024</span
+                  ><br />Co-Technical Coordinator
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul class="skills">
+                <div class="first-skills">
+                  <li>Object-Oriented Programming</li>
+                  <li>Data Structures and Algorithms</li>
+                  <li>Database Management System</li>
+                  <li>Operating System</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Bootstrap</li>
+                  <li>Linux</li>
+                </div>
+                <div class="second-skills">
+                  <li>JavaScript</li>
+                  <li>Java</li>
+                  <li>C++</li>
+                  <li>TypeScript</li>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Neo4J</li>
+                  <li>MySQL</li>
+                </div>
+                <div class="third-skills">
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                  <li>Tailwind CSS</li>
+                  <li>Express.js</li>
+                  <li>NextJS(Learning)</li>
+                  <li>Redux.js</li>
+                  <li>Git, GitHub & GitLab</li>
+                  <li>Docker</li>
+                </div>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>BE in Computer Engineering | 2020 - 2024</span
+                  ><br />Savitribai Phule Pune University <br />CGPA: 8.71
+                </li>
+                <li>
+                  <span>XII (CBSE BOARD) | 2017 - 2019</span><br />Lady Anusuya
+                  Singhania Educational Academy, Jhalawar <br />Percentage:
+                  80.83%
+                </li>
+                <li>
+                  <span>X (CBSE BOARD) | 2012 - 2017</span><br />Jawahar
+                  Navodaya Vidyalaya, Nandurbar <br />CGPA: 9.0
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- ----------------------------SERVICES----------------------------------- -->
 
     <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Developer</h2>
-                    <p>I craft unique web experiences, starting from scratch, and transforming ideas into vibrant,
-                        interactive realities.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h2>Software Engineer</h2>
-                    <p>Passionate software engineer with a strong foundation in coding and problem-solving skills, eager
-                        to contribute innovative solutions to real-world challenges in the tech industry.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Designer</h2>
-                    <p>I prioritize simple content structure, visually appealing design patterns and specialize in
-                        creating thoughtful interactions for enhanced user experiences.</p>
-                </div>
-
-            </div>
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>
+              I craft unique web experiences, starting from scratch, and
+              transforming ideas into vibrant, interactive realities.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Software Engineer</h2>
+            <p>
+              Passionate software engineer with a strong foundation in coding
+              and problem-solving skills, eager to contribute innovative
+              solutions to real-world challenges in the tech industry.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Designer</h2>
+            <p>
+              I prioritize simple content structure, visually appealing design
+              patterns and specialize in creating thoughtful interactions for
+              enhanced user experiences.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- -----------------------------------PORTFOLIO----------------------------- -->
 
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-4.png" alt="">
-                    <div class="layer">
-                        <h3>Dropbox Clone Project</h3>
-                        <p>Designed and implemented a cloud storage platform similar to Dropbox. Utilized NextJS and
-                            Firebase to achieve secure file storage and management, real-time synchronization.</p>
-                        <a href="https://dropbox-clone-eta-black.vercel.app/"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Spenndle - An Expense Manager App</h3>
-                        <p>A simple to use Java based expense manager; user can add new expenses, view, update and
-                            delete existing expenses.</p>
-                        <a href="https://github.com/ppremraj697/Spenndle"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>Personal Portfolio</h3>
-                        <p>Crafted a personal portfolio website using HTML, CSS, and JavaScript. Designed for optimal
-                            user experience with interactive elements, making information easily accessible and
-                            engaging.</p>
-                        <a href="https://github.com/ppremraj697/Personal-Portfolio"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Bank Management System</h3>
-                        <p>Developed this project in C++ to gain practical experience in OOP principles, file handling,
-                            and data structures. Showcases ability to design, implement, and maintain a complex system.
-                        </p>
-                        <a href="https://github.com/ppremraj697/Bank-Management-System"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-4.png" alt="" />
+            <div class="layer">
+              <h3>Dropbox Clone Project</h3>
+              <p>
+                Designed and implemented a cloud storage platform similar to
+                Dropbox. Utilized NextJS and Firebase to achieve secure file
+                storage and management, real-time synchronization.
+              </p>
+              <a href="https://dropbox-clone-eta-black.vercel.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
             </div>
-
-            <a href="https://github.com/ppremraj697" class="btn" target="_blank">See more</a>
+          </div>
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Spenndle - An Expense Manager App</h3>
+              <p>
+                A simple to use Java based expense manager; user can add new
+                expenses, view, update and delete existing expenses.
+              </p>
+              <a href="https://github.com/ppremraj697/Spenndle"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Personal Portfolio</h3>
+              <p>
+                Crafted a personal portfolio website using HTML, CSS, and
+                JavaScript. Designed for optimal user experience with
+                interactive elements, making information easily accessible and
+                engaging.
+              </p>
+              <a href="https://github.com/ppremraj697/Personal-Portfolio"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Bank Management System</h3>
+              <p>
+                Developed this project in C++ to gain practical experience in
+                OOP principles, file handling, and data structures. Showcases
+                ability to design, implement, and maintain a complex system.
+              </p>
+              <a href="https://github.com/ppremraj697/Bank-Management-System"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
         </div>
+
+        <a href="https://github.com/ppremraj697" class="btn" target="_blank"
+          >See more</a
+        >
+      </div>
     </div>
 
     <!-- -------------------------CONTACT---------------------------------------- -->
 
     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact</h1>
-                    <p><a href="mailto:ppremraj697@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>
-                            ppremraj697@gmail.com</a></p>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/premraj-patil-a7785b207" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/premraj.patil.988" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://twitter.com/Premraj60032424" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://instagram.com/premraj9864?igshid=ZDdkNTZiNTM=" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact</h1>
+            <p>
+              <a href="mailto:ppremraj697@gmail.com" target="_blank"
+                ><i class="fa-solid fa-envelope"></i> ppremraj697@gmail.com</a
+              >
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://linkedin.com/in/premraj-patil-a7785b207"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/premraj.patil.988"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/Premraj60032424" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://instagram.com/premraj9864?igshid=ZDdkNTZiNTM="
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
 
-        <div class="copyright">
-            <p>Copyright &copy Premraj Patil</p>
-        </div>
+      <div class="copyright">
+        <p>Copyright &copy Premraj Patil</p>
+      </div>
     </div>
 
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
